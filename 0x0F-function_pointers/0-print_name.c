@@ -6,8 +6,9 @@
  * @name: name to print
  * @f: pointer to the printing function
  */
-int main()
+void print_name(char *name, void (*f)(char *))
 {
-	printf("Paul Ehigie");
-	getch();
+	if (!name || !f)
+		return;
+	f(name);
 }
