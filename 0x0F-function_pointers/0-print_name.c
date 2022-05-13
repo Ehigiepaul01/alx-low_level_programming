@@ -6,9 +6,10 @@
  * @name: name to print
  * @f: pointer to the printing function
  */
-void print_name(char *name, void (*f)(char *))
+int main(void)
 {
-	if (!name || !f)
-		return;
-	f(name);
+	print_name("Paul", print_name_as_is);
+	print_name("Paul Ehigie", print-name_uppercase);
+	printf("/n");
+	return(0);
 }
