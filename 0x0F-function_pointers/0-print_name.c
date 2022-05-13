@@ -6,10 +6,8 @@
  * @name: name to print
  * @f: pointer to the printing function
  */
-int main(void)
+int main()
 {
-	print_name("Paul", print_name_as_is);
-	print_name("Paul Ehigie", print-name_uppercase);
-	printf("/n");
-	return(0);
+	printf("Paul Ehigie");
+	getch();
 }
